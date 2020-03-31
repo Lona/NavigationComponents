@@ -340,6 +340,14 @@ public class NavigationItemView: NSBox {
         beginDraggingSession(with: [draggingItem], event: event, source: self)
     }
 
+    public override func hitTest(_ point: NSPoint) -> NSView? {
+        if frame.contains(point) {
+            return self
+        }
+
+        return nil
+    }
+
     private func handleClick() {
         onClick?()
     }
