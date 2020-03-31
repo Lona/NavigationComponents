@@ -10,7 +10,7 @@ import AppKit
 
 // MARK: - NavigationBar
 
-public class NavigationBar: NSBox {
+open class NavigationBar: NSBox {
 
     public struct Style: Equatable {
         public var stackStyle: NavigationItemStack.Style = .compressible

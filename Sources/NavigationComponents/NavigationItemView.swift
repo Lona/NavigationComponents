@@ -16,7 +16,7 @@ extension NSEdgeInsets: Equatable {
     }
 }
 
-public class NavigationItemView: NSBox {
+open class NavigationItemView: NSBox {
 
     public struct Style: Equatable {
         public var padding: NSEdgeInsets = .init(top: 2, left: 4, bottom: 2, right: 4)

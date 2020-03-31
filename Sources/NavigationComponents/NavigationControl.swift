@@ -10,7 +10,7 @@ import AppKit
 
 // MARK: - NavigationControl
 
-public class NavigationControl: NSBox {
+open class NavigationControl: NSBox {
 
     public struct Style: Equatable {
         public var itemStyle: NavigationItemView.Style = .default

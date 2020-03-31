@@ -10,7 +10,7 @@ import AppKit
 
 // MARK: - NavigationItemStack
 
-public class NavigationItemStack: NSBox {
+open class NavigationItemStack: NSBox {
 
     public static let slashDividerImage = NSImage(size: NSSize(width: 6, height: 14), flipped: false, drawingHandler: { rect in
        NSColor.textColor.withAlphaComponent(0.4).setStroke()
